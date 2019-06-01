@@ -1,5 +1,5 @@
 
-# https://leetcode.com/problems/height-checker/submissions/
+# https://leetcode.com/problems/height-checker/
 
 def height_checker(heights)
   sorted = heights.sort

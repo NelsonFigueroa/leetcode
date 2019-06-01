@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/sort-array-by-parity/submissions/
+# https://leetcode.com/problems/sort-array-by-parity/
 
 def sort_array_by_parity(a)
   output = []

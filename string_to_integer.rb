@@ -1,6 +1,6 @@
 # Ruby 2.5.0
 
-# https://leetcode.com/problems/string-to-integer-atoi/description/
+# https://leetcode.com/problems/string-to-integer-atoi/
 
 INT_MIN = -2147483648
 INT_MAX = 2147483647

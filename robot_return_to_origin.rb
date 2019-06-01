@@ -1,6 +1,6 @@
 # Ruby 2.5.0
 
-# https://leetcode.com/problems/robot-return-to-origin/description/
+# https://leetcode.com/problems/robot-return-to-origin/
 
 def judge_circle(moves)
   # R = Right

@@ -1,5 +1,5 @@
 # Python 3.7.0
-# https://leetcode.com/problems/reverse-integer/description/
+# https://leetcode.com/problems/reverse-integer/
 
 class Solution:
   def reverse(self, x):
