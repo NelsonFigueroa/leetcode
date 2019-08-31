@@ -1,6 +1,7 @@
 # Ruby 2.6.3
 # https://leetcode.com/problems/add-two-numbers/
 
+# Node definition
 class ListNode
 	attr_accessor :val, :next
 
@@ -10,17 +11,16 @@ class ListNode
 	end
 end
 
-# linked list 1, [2,4,3]
-l1 = ListNode.new(1)
-# l1.next = ListNode.new(4)
-# l1.next.next = ListNode.new(3)
+# Testing values
 
-# linked list 2, [5,6,4]
+# linked list 1
+l1 = ListNode.new(1)
+
+# linked list 2
 l2 = ListNode.new(9)
 l2.next = ListNode.new(9)
-# l2.next.next = ListNode.new(4)
 
-
+# Actual answer
 def add_two_numbers(l1, l2)
 	num1 = ''
 	num2 = ''
@@ -28,7 +28,7 @@ def add_two_numbers(l1, l2)
 	# get number from first linked list
 	loop do
 		node = l1
-		num1.concat(node.val.to_s)
+		num1 = num1 + node.val.to_s
 	  break if l1.next.nil?
 	  l1 = l1.next
 	end 
@@ -36,7 +36,7 @@ def add_two_numbers(l1, l2)
 	# get number from second linked list
 	loop do
 		node = l2
-		num2.concat(node.val.to_s)
+		num2 = num2 + node.val.to_s
 	  break if l2.next.nil?
 	  l2 = l2.next
 	end 
