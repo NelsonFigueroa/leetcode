@@ -11,7 +11,7 @@ class ListNode
 	end
 end
 
-# Testing values
+# Linked lists for testing
 
 # linked list 1
 l1 = ListNode.new(1)
