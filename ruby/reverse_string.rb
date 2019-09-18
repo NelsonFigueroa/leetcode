@@ -21,3 +21,7 @@ def reverse_string(s)
 end
 
 puts reverse_string("Hello")
+
+# A stack could have been used too
+# Add all characters to a stack
+# pop stack until no characters left, and the string will be reversed!
