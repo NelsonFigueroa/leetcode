@@ -27,7 +27,7 @@ func hammingWeight(num uint32) int {
 	bitCounter := 0
 
 	for index := range bits {
-		if bits[index] == "1"{
+		if bits[index] == "1" {
 			bitCounter++
 		}
 	}
