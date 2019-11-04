@@ -20,10 +20,10 @@ func numJewelsInStones(J string, S string) int {
   for s_index := range stones {
     // check if stone exists in jewels array
     for j_index := range jewels {
-	    if stones[s_index] == jewels[j_index] {
-	      jewel_count++
-	     }
-     }
+      if stones[s_index] == jewels[j_index] {
+        jewel_count++
+      }
+    }
   }
 
   return jewel_count
