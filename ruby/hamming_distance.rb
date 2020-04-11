@@ -1,4 +1,3 @@
-# Ruby 2.5.3
 # https://leetcode.com/problems/hamming-distance/
 
 def hamming_distance(x, y)
@@ -9,11 +8,11 @@ def hamming_distance(x, y)
   # if one integer has more bits than the other, add 0's for padding
   if x_binary.length > y_binary.length
     (x_binary.length - y_binary.length).abs.times do
-      y_binary.prepend("0")
+      y_binary.prepend('0')
     end
   elsif y_binary.length > x_binary.length
-    (x_binary.length - y_binary.length).abs.times do 
-      x_binary.prepend("0")
+    (x_binary.length - y_binary.length).abs.times do
+      x_binary.prepend('0')
     end
   end
 
@@ -26,9 +25,7 @@ def hamming_distance(x, y)
 
   # iterate through bits and compare
   x_bits.length.times do |i|
-    if x_bits[i].to_i != y_bits[i].to_i
-      distance = distance + 1
-    end
+    distance += 1 if x_bits[i].to_i != y_bits[i].to_i
   end
-  return distance
+  distance
 end

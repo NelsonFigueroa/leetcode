@@ -27,18 +27,20 @@ def add_two_numbers(l1, l2)
   # get number from first linked list
   loop do
     node = l1
-    num1 = num1 + node.val.to_s
+    num1 += node.val.to_s
     break if l1.next.nil?
+
     l1 = l1.next
-  end 
+  end
 
   # get number from second linked list
   loop do
     node = l2
-    num2 = num2 + node.val.to_s
+    num2 += node.val.to_s
     break if l2.next.nil?
+
     l2 = l2.next
-  end 
+  end
 
   # reverse the numbers before adding
   num1.reverse!
@@ -62,7 +64,7 @@ def add_two_numbers(l1, l2)
     linked_list_sum = linked_list_sum.next
   end
 
-  return linked_list_head
+  linked_list_head
 end
 
 add_two_numbers(l1, l2)
