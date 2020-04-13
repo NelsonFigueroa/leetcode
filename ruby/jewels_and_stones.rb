@@ -7,9 +7,7 @@ def num_jewels_in_stones(j, s)
 
   counter = 0
   stones.each do |stone|
-    if jewels.include? stone
-      counter = counter + 1
-    end
+    counter += 1 if jewels.include? stone
   end
-  return counter
+  counter
 end
