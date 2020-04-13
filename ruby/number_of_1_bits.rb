@@ -7,7 +7,7 @@ def hamming_weight(n)
   # ruby interprets binary as decimal, so use to_s(2) to keep number as decimal
   bits = n.to_s(2).split('')
   bits.each do |bit|
-    counter = counter + 1 if bit == '1'
+    counter += 1 if bit == '1'
   end
-  return counter
+  counter
 end
