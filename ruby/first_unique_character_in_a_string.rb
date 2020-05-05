@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/first-unique-character-in-a-string/
+
 def first_uniq_char(s)
   return -1 if s.empty?
 
