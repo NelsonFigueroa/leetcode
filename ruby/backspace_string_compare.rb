@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/backspace-string-compare/
+
 def backspace_compare(s, t)
   s.chars.count('#').times do
     s = s.gsub(/[a-z]#/, '')
