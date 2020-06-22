@@ -1,4 +1,3 @@
-// Go 1.13.3
 // https://leetcode.com/problems/fibonacci-number/
 
 package main

@@ -1,4 +1,3 @@
-// Go 1.13.4
 // https://leetcode.com/problems/number-of-1-bits/
 
 package main

@@ -1,4 +1,3 @@
-// Go 1.13.4
 // https://leetcode.com/problems/jewels-and-stones/
 
 package main
