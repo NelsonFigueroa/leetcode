@@ -1,5 +1,5 @@
-# Ruby 2.6.3
 # https://leetcode.com/problems/add-two-numbers/
+
 node definition
 class ListNode
   attr_accessor :val, :next

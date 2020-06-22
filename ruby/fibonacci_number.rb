@@ -1,4 +1,3 @@
-# Ruby 2.6.3
 # https://leetcode.com/problems/fibonacci-number/
 
 def fib(n)

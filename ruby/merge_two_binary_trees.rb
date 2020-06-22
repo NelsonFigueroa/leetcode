@@ -1,4 +1,3 @@
-# Ruby 2.5.0
 # https://leetcode.com/problems/merge-two-binary-trees/
 
 # Class defining nodes

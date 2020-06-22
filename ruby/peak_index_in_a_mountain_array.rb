@@ -1,4 +1,3 @@
-# Ruby 2.6.3
 # https://leetcode.com/problems/peak-index-in-a-mountain-array/
 
 def peak_index_in_a_mountain_array(a)
