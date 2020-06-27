@@ -17,7 +17,7 @@ func sumZero(n int) []int {
 	n = n / 2
 
 	for i := 1; i <= n; i++ {
-		result = append(result, i) // positive integer
+		result = append(result, i)    // positive integer
 		result = append(result, i*-1) // negative integer
 	}
 
