@@ -1,14 +1,13 @@
-# Ruby 2.5.3
 # https://leetcode.com/problems/self-dividing-numbers/
 
 def self_dividing_numbers(left, right)
   output_nums = []
   (left..right).each do |num|
-
     # split num into digits array
-    digits = num.to_s.split("")
+    digits = num.to_s.split('')
     # if num contains the digit zero, skip
     next if digits.include? '0'
+
     # loop through digits
     digit_index = 0 # to keep track of digit position
     digits.each do |digit|
@@ -26,8 +25,8 @@ def self_dividing_numbers(left, right)
       digit_index += 1
     end
   end
-  return output_nums
-end 
+  output_nums
+end
 
 # test
 self_dividing_numbers(1, 22)
