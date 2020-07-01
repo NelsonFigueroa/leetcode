@@ -40,8 +40,8 @@ def judge_circle(moves)
 
   # If both x-axis and y-axis are 0, then robot is back at starting position, return true.
   if x_axis.zero? && y_axis.zero?
-    return true
+    true
   else
-    return false
+    false
   end
 end
