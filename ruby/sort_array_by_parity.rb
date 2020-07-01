@@ -2,16 +2,16 @@
 
 def sort_array_by_parity(a)
   output = []
-  
+
   # loop to add even numbers to output array
   a.each do |num|
-    output << num if num.even? 
+    output << num if num.even?
   end
-  
+
   # loop to add odd numbers to output array
   a.each do |num|
-    output << num if num.odd? 
+    output << num if num.odd?
   end
-  
-  return output
+
+  output
 end
