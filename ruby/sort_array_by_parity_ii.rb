@@ -4,7 +4,7 @@
 def sort_array_by_parity_ii(a)
   even_nums = []
   odd_nums = []
-  
+
   # separating even and odd numbers
   a.each do |num|
     if num.even?
@@ -21,17 +21,17 @@ def sort_array_by_parity_ii(a)
 
   # iterator to use when determining when to add even or odd numbers
   iterator = 0
-  until iterator > max_length do
-    if iterator % 2 == 0
+  until iterator > max_length
+    if iterator.even?
       output_array << even_nums.shift unless even_nums.empty?
-    elsif iterator % 2 != 0
+    elsif iterator.odd?
       output_array << odd_nums.shift unless odd_nums.empty?
     end
 
     iterator += 1
   end
 
-  return output_array
+  output_array
 end
 
 puts sort_array_by_parity_ii([1, 2, 3, 4, 5])
