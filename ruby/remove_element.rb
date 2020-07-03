@@ -12,4 +12,6 @@ def remove_element(nums, val)
   result.each do |num|
     nums << num
   end
+
+  nums.length
 end
