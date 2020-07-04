@@ -1,10 +1,12 @@
 # https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
 
 def replace_elements(arr)
-  output = []
-
-  (arr.length - 1).times do |i|
-    output << arr.slice(i + 1, arr.length).max
+  last = arr.length - 1
+  arr.each_index do |i|
+    arr[i] = arr[i + 1..last].max
   end
-  output << -1
+
+  arr[last] = -1
+
+  arr
 end
