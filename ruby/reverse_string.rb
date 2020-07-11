@@ -5,22 +5,15 @@ def reverse_string(s)
   # return s.reverse!
 
   # the hard solution:
-  characters = s.split('')
   reverse = []
 
-  length = characters.length
-
-  while (length >= 0) do
-    reverse << characters[length]
-    
-    length -= 1
+  s.length.times do
+    reverse << s.pop
   end
 
-  return reverse.join('')
+  reverse.each do |char|
+    s << char
+  end
+
+  s
 end
-
-puts reverse_string("Hello")
-
-# A stack could have been used too
-# Add all characters to a stack
-# pop stack until no characters left, and the string will be reversed!
