@@ -7,28 +7,21 @@ class TreeNode
 
   def initialize(val)
     @val = val
-    @left, @right = nil, nil
+    @left = nil
+    @right = nil
   end
 end
 
 # Actual solution
 
 def is_unival_tree(root)
-  if root.nil?
-    return true
-  end
+  return true if root.nil?
 
-  if (root.left != nil) && (root.left.val != root.val)
-    return false
-  end
+  return false if !root.left.nil? && (root.left.val != root.val)
 
-  if (root.right != nil) && (root.right.val != root.val)
-    return false
-  end
+  return false if !root.right.nil? && (root.right.val != root.val)
 
-  if is_unival_tree(root.left) && is_unival_tree(root.right)
-    return true
-  end
+  return true if is_unival_tree(root.left) && is_unival_tree(root.right)
 
   false
 end
