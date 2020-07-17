@@ -8,11 +8,11 @@ def middle_node(head)
     count += 1
   end
 
-  if count.odd?
-    middle = count - (count / 2)
-  else
-    middle = count - (count / 2) + 1
-  end
+  middle = if count.odd?
+             count - (count / 2)
+           else
+             count - (count / 2) + 1
+           end
 
   pointer = head
   i = 1
