@@ -2,9 +2,9 @@
 
 def reverse_words(s)
   output = []
-  words = s.split(" ")
+  words = s.split(' ')
   words.each do |word|
-      output << word.reverse! 
+    output << word.reverse!
   end
-  return output.join(" ")
+  output.join(' ')
 end

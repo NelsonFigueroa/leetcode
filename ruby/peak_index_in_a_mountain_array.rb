@@ -2,7 +2,7 @@
 
 def peak_index_in_a_mountain_array(a)
   # get largest value in array
-  mountain = a.sort.last
+  mountain = a.max
 
   a.each_with_index do |val, index|
     # return index if value matches largest value in array
