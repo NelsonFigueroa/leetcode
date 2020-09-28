@@ -6,7 +6,7 @@ def valid_ip_address(ip)
 
     ip.split('.').each do |octet|
       # Octets must be within 0-255 range
-      return 'Neither' if octet.to_i > 255 || octet.to_i < 0
+      return 'Neither' if octet.to_i > 255 || octet.to_i.negative?
 
       # Octets should not have leading zeroes
       if /0{1,2}\d*/.match(octet)
@@ -21,7 +21,7 @@ def valid_ip_address(ip)
 
     ip.split(':').each do |segment|
       # Segments must be between 0 - FFFF
-      return 'Neither' if segment.hex > 65_535 || segment.hex < 0
+      return 'Neither' if segment.hex > 65_535 || segment.hex.negative?
     end
     return 'IPv6'
   end
