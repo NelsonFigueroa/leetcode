@@ -7,7 +7,7 @@ def sort_colors(nums)
   two_count = 0
 
   nums.each do |num|
-    if num == 0
+    if num.zero?
       zero_count += 1
     elsif num == 1
       one_count += 1
