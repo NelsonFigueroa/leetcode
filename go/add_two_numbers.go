@@ -14,6 +14,14 @@ type ListNode struct {
 	Next *ListNode
 }
 
+func reverseSlice(s []string) []string {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
+
+	return s
+}
+
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	// slices to store digits
 	num1 := []string{}
@@ -30,12 +38,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 
 	// reverse each slice and join into string
-	for i, j := 0, len(num1)-1; i < j; i, j = i+1, j-1 {
-		num1[i], num1[j] = num1[j], num1[i]
-	}
-	for i, j := 0, len(num2)-1; i < j; i, j = i+1, j-1 {
-		num2[i], num2[j] = num2[j], num2[i]
-	}
+	num1 = reverseSlice(num1)
+	num2 = reverseSlice(num2)
 
 	// join each slice
 	num1Joined := strings.Join(num1, "")
@@ -58,18 +62,14 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	resultSlice := strings.Split(resultStr, "")
 
 	// reverse slice
-	for i, j := 0, len(resultSlice)-1; i < j; i, j = i+1, j-1 {
-		resultSlice[i], resultSlice[j] = resultSlice[j], resultSlice[i]
-	}
+	resultSlice = reverseSlice(resultSlice)
 
 	// create linked list out of result slice and return
 	head := &ListNode{Val: 0, Next: nil}
 	pointer := head // pointer for iterations
 
 	for i := 0; i < len(resultSlice); i++ {
-		fmt.Println(i)
 		pointer.Val, _ = strconv.Atoi(resultSlice[i])
-		fmt.Println("Value: ", pointer.Val)
 
 		if i+1 == len(resultSlice) {
 			break
@@ -83,5 +83,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func main() {
-		// fmt.Println(addTwoNumbers(l1, l2))
+	l1 := &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 3, Next: nil}}}
+	l2 := &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 4, Next: nil}}}
+	head := addTwoNumbers(l1, l2)
+	fmt.Println(head.Val)
 }
