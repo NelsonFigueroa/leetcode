@@ -3,13 +3,19 @@
 class Solution:
     def fizzBuzz(self, n: int):
       result = []
-      for x in range(n):
-        if x % 3 == 0:
+      x = 1
+      while x <= n:
+        print(x )
+        if x % 3 == 0 and x % 5 == 0:
+          result.append("FizzBuzz")
+        elif x % 3 == 0:
           result.append("Fizz")
         elif x % 5 == 0:
           result.append("Buzz")
         else:
           result.append(str(x))
+
+        x += 1
 
       return result
 
