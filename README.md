@@ -2,4 +2,4 @@
 
 Repo for accepted LeetCode challenges.
 
-LeetCode profile: [https://leetcode.com/nelsonfigueroa/](https://leetcode.com/nelsonfigueroa/)
+LeetCode profile: [leetcode.com/nelsonfigueroa/](https://leetcode.com/nelsonfigueroa/)
