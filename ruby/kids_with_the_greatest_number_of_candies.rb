@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/submissions/
+# https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 
 def kids_with_candies(candies, extra_candies)
   output = []

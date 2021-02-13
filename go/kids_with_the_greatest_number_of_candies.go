@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/submissions/
+// https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 
 package main
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/arranging-coins/submissions/
+# https://leetcode.com/problems/arranging-coins/
 
 def arrange_coins(n)
   iterator = 1
