@@ -5,7 +5,6 @@ class Solution:
       result = []
       x = 1
       while x <= n:
-        print(x )
         if x % 3 == 0 and x % 5 == 0:
           result.append("FizzBuzz")
         elif x % 3 == 0:
