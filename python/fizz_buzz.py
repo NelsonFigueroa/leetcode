@@ -1,7 +1,9 @@
 # https://leetcode.com/problems/fizz-buzz/
 
+from typing import List
+
 class Solution:
-    def fizzBuzz(self, n: int):
+    def fizzBuzz(self, n: int) -> List[str]:
       result = []
       x = 1
       while x <= n:
@@ -18,5 +20,5 @@ class Solution:
 
       return result
 
-result = Solution.fizzBuzz(Solution, 1)
+result = Solution.fizzBuzz(Solution, 15)
 print(result)
