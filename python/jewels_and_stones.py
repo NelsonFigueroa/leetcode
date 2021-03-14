@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/jewels-and-stones/
 
 class Solution:
-    def numJewelsInStones(self, jewels, stones):
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
         jewel_count = 0
         for jewel in jewels:
             for stone in stones:
